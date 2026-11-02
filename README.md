@@ -6,6 +6,8 @@ Report date: 2026-11-02
 
 All three models listed below exhibit the same crash signature with AMDGPUExecutionProvider on Windows x64: access violation `0xC0000005` at `onnxruntime.dll + 0x6C5905` during `OgaCreateGenerator`. One representative crash log (Gemma 4) is included verbatim below for AMD investigation.
 
+Retesting Qwen 3.5 9B with the newer AMDGPU EP Windows package `2.2611.67.0` produced the same crash signature as package `1.8.65.0`. Both packages report EP version `0.1.0`. The representative log below is from the original run.
+
 ## Affected models
 
 | Model | Local registration ID | HF Url |
@@ -66,7 +68,7 @@ All three decoder configurations specify:
 | WinML DLL in native build output | `2.5.96.5615` (product `2.5.96+15ef6e1278`) |
 | Execution provider | `AMDGPUExecutionProvider` |
 | AMDGPU EP reported version | `0.1.0` |
-| AMDGPU EP Windows package | `Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe` |
+| AMDGPU EP Windows package | `Microsoft.WinML.AMD.GPU.EP.Framework.2_2.2611.67.0_x64__8wekyb3d8bbwe` |
 | Decoder profile | `hip` |
 | Native Foundry configuration | Windows x64, RelWithDebInfo |
 
