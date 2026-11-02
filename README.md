@@ -65,6 +65,8 @@ All three decoder configurations specify:
 | ONNX Runtime GenAI Python package | `onnxruntime-genai-core==0.18.0` |
 | WinML DLL in native build output | `2.5.96.5615` (product `2.5.96+15ef6e1278`) |
 | Execution provider | `AMDGPUExecutionProvider` |
+| AMDGPU EP reported version | `0.1.0` |
+| AMDGPU EP Windows package | `Microsoft.WinML.AMD.GPU.EP.Framework.2_1.8.65.0_x64__8wekyb3d8bbwe` |
 | Decoder profile | `hip` |
 | Native Foundry configuration | Windows x64, RelWithDebInfo |
 
